@@ -11,6 +11,7 @@ import { TopPostCardComponent } from './pages/home/components/top-post-card/top-
 import { PostCardComponent } from './pages/home/components/post-card/post-card.component';
 import { SmallPostCardComponent } from './pages/home/components/small-post-card/small-post-card.component';
 import { NavbarSearchComponent } from './pages/components/navbar/components/navbar-search/navbar-search.component';
+import { SidebarComponent } from './pages/home/components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { NavbarSearchComponent } from './pages/components/navbar/components/navb
     PostCardComponent,
     SmallPostCardComponent,
     NavbarSearchComponent,
+    SidebarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

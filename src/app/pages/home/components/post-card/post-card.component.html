@@ -1,1 +1,17 @@
-<p>post-card works!</p>
+<article class="vstack">
+  <a [routerLink]="'post/' + postData.slugId">
+    <h3>{{ postData.title || 'Lorem ipsum dolor sit amet consectetur adipisicing' }}</h3>
+  </a>
+
+  <div class="image">
+    <img [src]="postData.img" [alt]="postData.imgAlt" [ngStyle]="{'width': imgWidth, 'height': imgHeight}">
+    <div class="category">{{ postData.category || 'Adventures' }}</div>
+  </div>
+
+  <div class="content vstack">
+    <p>
+      {{ postData.description || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum voluptatem culpa dolor, enim pariatur repellat fugiat maxime...' }}
+    </p>
+    <p class="author">By {{ postData.author || 'Álvaro Emanuel' }} | {{ postData.createdAt || '12 hours' }}</p>
+  </div>
+</article>

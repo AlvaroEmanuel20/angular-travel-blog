@@ -3,7 +3,7 @@
 :root {
   /* Colors */
   --bg-gray: #212429;
-  --white: #fff;
+  --white: #ffffffdd;
   --blue: #0e5fa3;
   --border-gray: rgba(111, 111, 111, 0.375);
 
@@ -56,6 +56,11 @@ ul {
 }
 
 .container {
-  width: 1000px;
+  width: 1050px;
+  margin: 0 auto;
+}
+
+.container-sm {
+  width: 970px;
   margin: 0 auto;
 }

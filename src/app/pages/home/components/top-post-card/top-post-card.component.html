@@ -1,1 +1,13 @@
-<p>top-post works!</p>
+<article class="article" [ngStyle]="{'background-image': bgImage, 'padding': padding}">
+  <div class="overlay"></div>
+  <div class="article__category" [ngStyle]="{'top': categoryTop}">
+    {{ postData.category || 'Adventures' }}
+  </div>
+
+  <div class="article__content vstack">
+    <h2>{{ postData.title || 'Lorem ipsum dolor sit amet consectetur adipisicing elit' }}</h2>
+    <p>By {{ postData.author || 'Álvaro Emanuel' }}</p>
+    <hr>
+    <a [routerLink]="'post/' + postData.slugId">Read more</a>
+  </div>
+</article>

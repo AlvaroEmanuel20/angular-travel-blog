@@ -1,0 +1,43 @@
+article {
+  gap: 15px;
+}
+
+a:hover {
+  color: var(--blue);
+  transition-duration: 200ms;
+}
+
+h3 {
+  font-size: var(--fs-md);
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+
+.image {
+  position: relative;
+}
+
+.image img {
+  object-fit: cover;
+}
+
+.category {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  color: var(--white);
+  background-color: var(--bg-gray);
+  border-left: 4px solid var(--blue);
+  padding: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.content {
+  gap: 8px;
+}
+
+.author {
+  font-size: var(--fs-sm);
+}
