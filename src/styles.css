@@ -1,5 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+  /* Colors */
+  --bg-gray: #212429;
+  --white: #fff;
+  --blue: #0e5fa3;
+  --border-gray: rgba(111, 111, 111, 0.375);
+
+  /* Font size */
+  --fs-sm: 0.875rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 1.875rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +23,12 @@
   background: 0;
   font-size: 1rem;
   font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+body,
+html {
+  overflow-x: hidden;
 }
 
 a {
@@ -17,4 +38,24 @@ a {
 
 button {
   cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Shared classes */
+.hstack {
+  display: flex;
+  align-items: center;
+}
+
+.vstack {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
 }

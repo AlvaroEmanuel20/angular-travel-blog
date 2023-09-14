@@ -1,0 +1,33 @@
+<section class="hstack">
+  <a class="logo" routerLink="/">
+    <img src="../../../../assets/logo.svg" alt="Travel blog logo">
+  </a>
+
+  <div class="navbar vstack">
+    <div class="navbar__items hstack">
+      <div class="navbar__items-social hstack">
+        <p>Join to our community</p>
+
+        <ul class="hstack">
+          <li *ngFor="let link of socialLinks">
+            <app-social-icon-button [icon]="link.icon" [link]="link.link"></app-social-icon-button>
+          </li>
+        </ul>
+      </div>
+
+      <app-navbar-search></app-navbar-search>
+    </div>
+
+    <div class="navbar__nav hstack">
+      <nav class="hstack">
+        <div *ngFor="let menuItem of menu">
+          <a [routerLink]="menuItem.link">{{ menuItem.label }}</a>
+        </div>
+      </nav>
+
+      <button class="navbar__nav-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+  </div>
+</section>

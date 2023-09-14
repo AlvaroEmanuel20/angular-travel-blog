@@ -1,0 +1,42 @@
+.input.hstack {
+  gap: 10px;
+  padding: 0 30px;
+}
+
+label {
+  cursor: pointer;
+}
+
+label:hover {
+  color: var(--blue);
+  transition-duration: 200ms;
+}
+
+i {
+  font-size: var(--fs-md);
+}
+
+input {
+  font-size: var(--fs-sm);
+  color: var(--white);
+}
+
+input::placeholder {
+  color: var(--border-gray);
+}
+
+button {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--white);
+  font-size: var(--fs-sm);
+  border-left: 1px solid var(--border-gray);
+  border-right: 1px solid var(--border-gray);
+  height: 55px;
+  padding: 0 20px;
+}
+
+button:hover {
+  background-color: var(--blue);
+  transition-duration: 200ms;
+}
