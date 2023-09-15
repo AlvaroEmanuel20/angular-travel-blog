@@ -1,0 +1,27 @@
+.social__stats {
+  padding-left: 20px;
+}
+
+.social__stats h4 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.social__stats ul.vstack {
+  gap: 8px;
+}
+
+.small__cards {
+  padding-top: 15px;
+  margin-left: 20px;
+  border-top: 1px solid var(--border-gray);
+}
+
+.small__cards h3 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.small__cards .cards.vstack {
+  gap: 15px;
+}

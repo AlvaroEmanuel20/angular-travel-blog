@@ -1,0 +1,8 @@
+div.hstack {
+  gap: 10px;
+}
+
+span {
+  font-size: var(--fs-sm);
+  color: gray;
+}

@@ -10,8 +10,10 @@ import { SocialIconButtonComponent } from './pages/components/social-icon-button
 import { TopPostCardComponent } from './pages/home/components/top-post-card/top-post-card.component';
 import { PostCardComponent } from './pages/home/components/post-card/post-card.component';
 import { SmallPostCardComponent } from './pages/home/components/small-post-card/small-post-card.component';
-import { NavbarSearchComponent } from './pages/components/navbar/components/navbar-search/navbar-search.component';
+import { NavbarSearchComponent } from './pages/components/navbar-search/navbar-search.component';
 import { SidebarComponent } from './pages/home/components/sidebar/sidebar.component';
+import { SocialStatComponent } from './pages/home/components/social-stat/social-stat.component';
+import { NewsletterComponent } from './pages/home/components/newsletter/newsletter.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { SidebarComponent } from './pages/home/components/sidebar/sidebar.compon
     SmallPostCardComponent,
     NavbarSearchComponent,
     SidebarComponent,
+    SocialStatComponent,
+    NewsletterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

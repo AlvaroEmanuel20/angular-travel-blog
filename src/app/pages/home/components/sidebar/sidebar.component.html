@@ -1,1 +1,22 @@
-<p>sidebar works!</p>
+<div>
+  <div class="social__stats">
+    <h4>Subscribe in our community</h4>
+
+    <ul class="vstack">
+      <li *ngFor="let stat of socialStats">
+        <app-social-stat [icon]="stat.icon" [followers]="stat.followers" [link]="stat.link"></app-social-stat>
+      </li>
+    </ul>
+  </div>
+
+  <app-newsletter></app-newsletter>
+
+  <div class="small__cards">
+    <h3>News of the week</h3>
+
+    <div class="cards vstack">
+      <app-small-post-card *ngFor="let post of smallCards"
+        [postData]="{'img': post.img, 'title': post.title, 'slugId': post.slugId, 'imgAlt': post.imgAlt, 'category': post.category, 'description': post.description}"></app-small-post-card>
+    </div>
+  </div>
+</div>

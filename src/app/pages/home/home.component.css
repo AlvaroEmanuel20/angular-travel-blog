@@ -16,7 +16,7 @@ header {
 main {
   padding: 40px 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 350px;
+  grid-template-columns: 1fr 1fr 340px;
   grid-template-rows: 500px 520px;
 }
 

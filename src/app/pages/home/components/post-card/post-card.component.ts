@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { TopPostData } from '../top-post-card/top-post-card.component';
 
-interface PostCardData extends TopPostData {
+export interface PostCardData extends TopPostData {
   createdAt?: string;
   description?: string;
   img: string;

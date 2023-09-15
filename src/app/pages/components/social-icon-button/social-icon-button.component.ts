@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 export class SocialIconButtonComponent {
   @Input() icon = '';
   @Input() link = '';
+  @Input() iconColor = 'var(--white)';
 }

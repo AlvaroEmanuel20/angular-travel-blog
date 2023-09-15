@@ -1,0 +1,62 @@
+.newsletter {
+  margin: 40px 0;
+}
+
+.title {
+  background-color: var(--bg-gray);
+  padding: 10px 20px;
+  border-left: 4px solid var(--blue);
+  margin-bottom: 20px;
+}
+
+.title h4 {
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+form {
+  padding-left: 20px;
+}
+
+form p {
+  font-size: var(--fs-sm);
+  color: gray;
+}
+
+.input {
+  margin-top: 6px;
+}
+
+input {
+  border: 1px solid var(--border-gray);
+  font-size: var(--fs-sm);
+  height: 42px;
+  padding: 0 15px;
+  min-width: 220px;
+}
+
+input::placeholder {
+  color: var(--border-gray);
+}
+
+input:focus-within {
+  border-color: var(--blue);
+  transition-duration: 200ms;
+}
+
+button {
+  font-size: var(--fs-sm);
+  background-color: var(--blue);
+  font-weight: bold;
+  color: var(--white);
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 17px;
+}
+
+button:hover {
+  background-color: var(--bg-gray);
+  transition-duration: 200ms;
+}

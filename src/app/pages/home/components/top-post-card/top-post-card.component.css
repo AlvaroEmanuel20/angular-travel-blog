@@ -13,7 +13,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   color: var(--white);
   position: relative;
 }

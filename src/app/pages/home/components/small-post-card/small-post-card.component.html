@@ -1,1 +1,17 @@
-<p>small-post-card works!</p>
+<article class="hstack">
+  <div class="image">
+    <img [src]="postData.img" [alt]="postData.imgAlt">
+  </div>
+
+  <div class="content vstack">
+    <div class="title">
+      <span>{{ postData.category }}</span>
+
+      <a [routerLink]="'post/' + postData.slugId">
+        <h5>{{ postData.title }}</h5>
+      </a>
+    </div>
+
+    <p>{{ postData.description }}</p>
+  </div>
+</article>
