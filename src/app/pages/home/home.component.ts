@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { posts } from 'src/app/data/posts';
 
 @Component({
   selector: 'app-home',
@@ -8,20 +9,26 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   topPosts = [
     {
-      id: 'post1',
-      img: 'url(https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80)',
+      id: posts[0].slugId,
+      img: `url(${posts[0].img})`,
+      title: posts[0].title,
+      category: posts[0].category,
       categoryTop: '25px',
       padding: '40px',
     },
     {
-      id: 'post2',
-      img: 'url(https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80)',
+      id: posts[1].slugId,
+      img: `url(${posts[1].img})`,
+      title: posts[1].title,
+      category: posts[1].category,
       categoryTop: '20px',
       padding: '20px',
     },
     {
-      id: 'post3',
-      img: 'url(https://images.unsplash.com/photo-1694248382197-37554ab406e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80)',
+      id: posts[2].slugId,
+      img: `url(${posts[2].img})`,
+      title: posts[2].title,
+      category: posts[2].category,
       categoryTop: '20px',
       padding: '20px',
     },
@@ -29,22 +36,34 @@ export class HomeComponent {
 
   postCards = [
     {
-      id: 'post4',
-      img: 'https://images.unsplash.com/photo-1533105079780-92b9be482077?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80',
-      imgAlt: 'Greece',
+      id: posts[3].slugId,
+      img: posts[3].img,
+      imgAlt: posts[3].title,
       imgHeight: '260px',
+      title: posts[3].title,
+      category: posts[3].category,
+      description: posts[3].description,
+      createdAt: posts[3].createdAt,
     },
     {
-      id: 'post5',
-      img: 'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1886&q=80',
-      imgAlt: 'Italy',
+      id: posts[4].slugId,
+      img: posts[4].img,
+      imgAlt: posts[4].title,
       imgHeight: '260px',
+      title: posts[4].title,
+      category: posts[4].category,
+      description: posts[4].description,
+      createdAt: posts[4].createdAt,
     },
     {
-      id: 'post6',
-      img: 'https://images.unsplash.com/photo-1541410965313-d53b3c16ef17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80',
-      imgAlt: 'Sea',
+      id: posts[5].slugId,
+      img: posts[5].img,
+      imgAlt: posts[5].title,
       imgHeight: '350px',
+      title: posts[5].title,
+      category: posts[5].category,
+      description: posts[5].description,
+      createdAt: posts[5].createdAt,
     },
   ];
 }

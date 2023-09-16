@@ -1,0 +1,50 @@
+header {
+  background-color: var(--bg-gray);
+}
+
+.image {
+  margin-top: 35px;
+  display: flex;
+}
+
+.image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+main {
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: 1fr 340px;
+}
+
+.title {
+  gap: 15px;
+}
+
+.title button {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--blue);
+}
+
+.title i {
+  font-size: var(--fs-xl);
+}
+
+h1 {
+  font-size: var(--fs-xl);
+}
+
+.content {
+  margin-top: 20px;
+}
+
+aside {
+  border-left: 1px solid var(--border-gray);
+  margin-left: 15px;
+}

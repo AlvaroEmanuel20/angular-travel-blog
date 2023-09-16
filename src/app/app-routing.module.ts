@@ -5,7 +5,7 @@ import { PostComponent } from './pages/post/post.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'post/:id', component: PostComponent },
   { path: '**', component: PageNotFoundComponent },
 ];

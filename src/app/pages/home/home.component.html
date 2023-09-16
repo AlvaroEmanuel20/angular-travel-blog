@@ -4,8 +4,8 @@
 
     <section class="top__posts container-sm">
       <div class="top__posts-card" *ngFor="let post of topPosts">
-        <app-top-post-card [postData]="{'slugId': post.id}" [bgImage]="post.img" [padding]="post.padding"
-          [categoryTop]="post.categoryTop"></app-top-post-card>
+        <app-top-post-card [postData]="{'slugId': post.id, 'title': post.title, 'category': post.category}"
+          [bgImage]="post.img" [padding]="post.padding" [categoryTop]="post.categoryTop"></app-top-post-card>
       </div>
     </section>
   </div>
@@ -13,7 +13,8 @@
 
 <main class="container-sm">
   <div class="post__card" *ngFor="let post of postCards">
-    <app-post-card [postData]="{'slugId': post.id, 'img': post.img, 'imgAlt': post.imgAlt}"
+    <app-post-card
+      [postData]="{'slugId': post.id, 'img': post.img, 'imgAlt': post.imgAlt, 'title': post.title, 'category': post.category, 'description': post.description, 'createdAt': post.createdAt}"
       [imgHeight]="post.imgHeight"></app-post-card>
   </div>
 

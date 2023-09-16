@@ -8,6 +8,6 @@
     <h2>{{ postData.title || 'Lorem ipsum dolor sit amet consectetur adipisicing elit' }}</h2>
     <p>By {{ postData.author || 'Álvaro Emanuel' }}</p>
     <hr>
-    <a [routerLink]="'post/' + postData.slugId">Read more</a>
+    <a [routerLink]="['post/', postData.slugId]">Read more</a>
   </div>
 </article>

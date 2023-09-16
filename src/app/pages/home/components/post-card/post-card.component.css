@@ -38,6 +38,10 @@ h3 {
   gap: 8px;
 }
 
+.content p {
+  color: gray;
+}
+
 .author {
   font-size: var(--fs-sm);
 }

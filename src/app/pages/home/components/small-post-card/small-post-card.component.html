@@ -7,7 +7,7 @@
     <div class="title">
       <span>{{ postData.category }}</span>
 
-      <a [routerLink]="'post/' + postData.slugId">
+      <a [routerLink]="['post/', postData.slugId]">
         <h5>{{ postData.title }}</h5>
       </a>
     </div>

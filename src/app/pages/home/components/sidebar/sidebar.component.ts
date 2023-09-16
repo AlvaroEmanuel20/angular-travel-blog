@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { posts } from 'src/app/data/posts';
 
 @Component({
   selector: 'app-sidebar',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./sidebar.component.css'],
 })
 export class SidebarComponent {
+  @Input() showNews = true;
+
   socialStats = [
     {
       icon: 'fa-brands fa-facebook-f',
@@ -32,28 +35,28 @@ export class SidebarComponent {
 
   smallCards = [
     {
-      slugId: 'post7',
-      img: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2021&q=80',
-      imgAlt: 'Desert',
-      category: 'Desert',
-      title: 'EUA Deserts',
-      description: 'Sit in ad do deserunt velit sint aute eu commodo...',
+      slugId: posts[6].slugId,
+      img: posts[6].img,
+      imgAlt: posts[6].title,
+      category: posts[6].category,
+      title: posts[6].title,
+      description: posts[6].description,
     },
     {
-      slugId: 'post7',
-      img: 'https://images.unsplash.com/photo-1528543606781-2f6e6857f318?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80',
-      imgAlt: 'Adventures',
-      category: 'Adventures',
-      title: 'Mountains',
-      description: 'Sit in ad do deserunt velit sint aute eu commodo...',
+      slugId: posts[7].slugId,
+      img: posts[7].img,
+      imgAlt: posts[7].title,
+      category: posts[7].category,
+      title: posts[7].title,
+      description: posts[7].description,
     },
     {
-      slugId: 'post7',
-      img: 'https://images.unsplash.com/photo-1518684079-3c830dcef090?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80',
-      imgAlt: 'Luxury',
-      category: 'Luxury',
-      title: 'Dubai Life',
-      description: 'Sit in ad do deserunt velit sint aute eu commodo...',
+      slugId: posts[8].slugId,
+      img: posts[8].img,
+      imgAlt: posts[8].title,
+      category: posts[8].category,
+      title: posts[8].title,
+      description: posts[8].description,
     },
   ];
 }

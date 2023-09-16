@@ -1,1 +1,37 @@
-<p>post works!</p>
+<header>
+  <div class="container">
+    <app-navbar></app-navbar>
+
+    <section class="image container-sm">
+      <img [src]="postData.img" [alt]="postData.title">
+    </section>
+  </div>
+</header>
+
+<main class="container-sm">
+  <section>
+    <div class="title hstack">
+      <button (click)="goBack()"><i class="fa-solid fa-circle-chevron-left"></i></button>
+      <h1>{{ postData.title }}</h1>
+    </div>
+
+    <div class="content">
+      <p>{{ postData.description }}</p>
+      <br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptates, eligendi eveniet doloribus numquam
+        saepe perferendis cumque dolor, id obcaecati quas atque molestias a fuga nostrum modi officia fugit libero.</p>
+      <br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptates, eligendi eveniet doloribus numquam
+        saepe
+        perferendis cumque dolor, id obcaecati quas atque molestias a fuga nostrum modi officia fugit libero.</p>
+      <br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptates, eligendi eveniet doloribus numquam
+        saepe
+        perferendis cumque dolor, id obcaecati quas atque molestias a fuga nostrum modi officia fugit libero.</p>
+    </div>
+  </section>
+
+  <aside>
+    <app-sidebar [showNews]="false"></app-sidebar>
+  </aside>
+</main>

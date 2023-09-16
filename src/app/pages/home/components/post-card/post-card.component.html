@@ -1,5 +1,5 @@
 <article class="vstack">
-  <a [routerLink]="'post/' + postData.slugId">
+  <a [routerLink]="['post/', postData.slugId]">
     <h3>{{ postData.title || 'Lorem ipsum dolor sit amet consectetur adipisicing' }}</h3>
   </a>
 
@@ -10,7 +10,8 @@
 
   <div class="content vstack">
     <p>
-      {{ postData.description || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum voluptatem culpa dolor, enim pariatur repellat fugiat maxime...' }}
+      {{ postData.description || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum voluptatem culpa
+      dolor, enim pariatur repellat fugiat maxime...' }}
     </p>
     <p class="author">By {{ postData.author || 'Álvaro Emanuel' }} | {{ postData.createdAt || '12 hours' }}</p>
   </div>
