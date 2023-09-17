@@ -52,6 +52,11 @@ ul.hstack {
   font-weight: bold;
 }
 
+.isActive {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
 .navbar__nav nav a:hover {
   color: var(--blue);
   transition-duration: 200ms;

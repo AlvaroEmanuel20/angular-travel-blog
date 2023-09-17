@@ -1,0 +1,55 @@
+header {
+  background-color: var(--bg-gray);
+}
+
+main {
+  padding: 40px 0;
+  align-items: center;
+}
+
+span {
+  font-size: 5rem;
+  line-height: 5rem;
+  font-weight: bold;
+  color: var(--blue);
+}
+
+h1 {
+  font-size: var(--fs-2xl);
+}
+
+p {
+  width: 550px;
+  text-align: center;
+  font-size: var(--fs-sm);
+  margin: 20px 0;
+}
+
+div.hstack {
+  gap: 15px;
+}
+
+button {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 14px 32px;
+  font-size: var(--fs-sm);
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: var(--bg-gray);
+  transition-duration: 200ms;
+}
+
+.outline {
+  background-color: transparent;
+  border: 1px solid var(--blue);
+  color: initial;
+}
+
+.outline:hover {
+  background-color: var(--blue);
+  transition-duration: 200ms;
+  color: var(--white);
+}

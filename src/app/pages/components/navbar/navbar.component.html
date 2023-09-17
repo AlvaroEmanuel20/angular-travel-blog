@@ -21,7 +21,8 @@
     <div class="navbar__nav hstack">
       <nav class="hstack">
         <div *ngFor="let menuItem of menu">
-          <a [routerLink]="menuItem.link">{{ menuItem.label }}</a>
+          <a [routerLink]="menuItem.link" [routerLinkActive]="['isActive']" [routerLinkActiveOptions]="{exact: true}">{{
+            menuItem.label }}</a>
         </div>
       </nav>
 

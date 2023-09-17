@@ -1,1 +1,18 @@
-<p>page-not-found works!</p>
+<header>
+  <div class="container">
+    <app-navbar></app-navbar>
+  </div>
+</header>
+
+<main class="container-sm vstack">
+  <span>404</span>
+
+  <h1>Page not found</h1>
+
+  <p>The page you're looking for may have been removed or its name has been changed or is temporarily unavailable</p>
+
+  <div class="hstack">
+    <button (click)="goBackHome()">Go back home</button>
+    <button class="outline" (click)="goBack()">Go back</button>
+  </div>
+</main>
